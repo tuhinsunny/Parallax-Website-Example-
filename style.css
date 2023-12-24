@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    /*1rem = 10px */
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+.image1{
+    background-image: url("pic1.jpg");
+    height: 100vh;
+    
+}
+.image2{
+    background-image: url("pic2.jpg");
+    height: 40rem;
+    
+}
+.image3{
+    background-image: url("pic3.jpg");
+    height: 40rem;
+}
+.image4{
+    background-image: url("pic4.jpg");
+    height: 100vh;
+}
+.image1, .image2, .image3, .image4{
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.heading{
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-size: 4rem;
+}
+.heading1 span, .heading4 span{
+    background-color: skyblue;
+    padding: 2rem 1.5rem;
+    border-radius: 1rem;
+}
+.heading2 span, .heading3 span{
+    font-weight: 900;
+}
+.section{
+    text-align: center;
+    padding: 2rem 15rem;
+}
+.section h1{
+    font-size: 3rem;
+    font-weight: 100;
+}
+.section p{
+    font-size: 2rem;
+    margin-top: 1.6rem;
+}
+.section2 , .section3{
+    background-color: rgb(138 138 216);
+    color:beige;
+}
+@media only screen and (max-width: 768px) {
+    html{
+        font-size: 50%;
+    }
+    .section{
+        padding: 2rem 5rem;
+    }
+}
